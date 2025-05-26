@@ -1,0 +1,59 @@
+{
+    "appName": "Education Lab",
+    "appSlogan": "Laboratorium Edukasi Berbasis AI.",
+    "footerText": "© {year} Edication Lab. Eksperimen Belajar.",
+    "dashboard": {
+        "title": "Dashboard Fitur",
+        "features": {
+            "personaChat": {
+                "name": "PersonaChat",
+                "description": "Ngobrol dengan AI persona."
+            },
+            "whisperTranscriber": {
+                "name": "Transkripsi Audio",
+                "description": "Ubah audio jadi teks."
+            },
+            "soalGenerator": {
+                "name": "Generator Soal",
+                "description": "Buat soal otomatis."
+            },
+            "grammarChecker": {
+                "name": "Pengecek Tata Bahasa",
+                "description": "Cek tata bahasa Iggris & Jepang."
+            },
+            "aiArticleReader": {
+                "name": "Pembaca Artikel AI",
+                "description": "AI bantu ringkas dan jelaskan artikel."
+            },
+            "aiFlashcardMaker": {
+                "name": "Pembuat Flashcard AI",
+                "description": "Buat flashcard otomatis dari teks."
+            },
+            "mentorPython": {
+                "name": "Mentor Python",
+                "description": "Penjelasan kode Python, debugging."
+            },
+            "kamusJepang": {
+                "name":"Kamus Jepang Pintar",
+                "description": "Makna kata dan contoh kalimat"
+            },
+            "speakingPractice": {
+                "name": "Latihan Berbicara",
+                "description": "AI mendengar dan merespond."
+            },
+            "aiInterviewSimulator": {
+                "name": "Simulator Wawancara AI",
+                "description": "Simulasi wawancara kerja."
+            }
+        }
+    },
+    "featuresPage": {
+        "title": "Fitur: {featureName}",
+        "comingSoon": "Fitur ini sedang dalam pengembangan."
+    },
+    "laguages": {
+        "id": "Indonesia",
+        "en": "Iggris",
+        "ja": "Jepang"
+    }
+}

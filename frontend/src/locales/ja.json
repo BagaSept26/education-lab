@@ -1,0 +1,59 @@
+{
+  "appName": "エデュケーション・ラボ",
+  "appSlogan": "あなたのAI教育ラボラトリー。",
+  "footerText": "© {year} エデュケーション・ラボ。学びの実験。",
+  "dashboard": {
+    "title": "機能ダッシュボード",
+    "features": {
+      "personaChat": {
+        "name": "ペルソナチャット",
+        "description": "AIペルソナとチャット。"
+      },
+      "whisperTranscriber": {
+        "name": "音声文字起こし",
+        "description": "音声をテキストに変換。"
+      },
+      "soalGenerator": {
+        "name": "問題ジェネレーター",
+        "description": "問題を自動作成。"
+      },
+      "grammarChecker": {
+        "name": "文法チェッカー",
+        "description": "英語と日本語の文法をチェック。"
+      },
+      "aiArticleReader": {
+        "name": "AI記事リーダー",
+        "description": "AIが記事の要約と説明を補助。"
+      },
+      "aiFlashcardMaker": {
+        "name": "AIフラッシュカードメーカー",
+        "description": "テキストから自動でフラッシュカードを作成。"
+      },
+      "mentorPython": {
+        "name": "Pythonメンター",
+        "description": "Pythonコードの説明、デバッグ。"
+      },
+      "kamusJepang": {
+        "name": "スマート日本語辞書",
+        "description": "単語の意味と例文。"
+      },
+      "speakingPractice": {
+        "name": "スピーキング練習",
+        "description": "AIが聞いて応答。"
+      },
+      "aiInterviewSimulator": {
+        "name": "AI面接シミュレーター",
+        "description": "就職面接のシミュレーション。"
+      }
+    }
+  },
+  "featuresPage": {
+    "title": "機能: {featureName}",
+    "comingSoon": "この機能は開発中です。"
+  },
+  "languages": {
+    "id": "インドネシア語",
+    "en": "英語",
+    "ja": "日本語"
+  }
+}

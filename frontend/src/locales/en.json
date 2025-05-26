@@ -1,0 +1,59 @@
+{
+  "appName": "Edication Lab",
+  "appSlogan": "Your Personal AI-Powered Education Laboratory.",
+  "footerText": "© {year} Edication Lab. Learning Experiment.",
+  "dashboard": {
+    "title": "Feature Dashboard",
+    "features": {
+      "personaChat": {
+        "name": "PersonaChat",
+        "description": "Chat with AI personas."
+      },
+      "whisperTranscriber": {
+        "name": "Audio Transcriber",
+        "description": "Convert audio to text."
+      },
+      "soalGenerator": {
+        "name": "Quiz Generator",
+        "description": "Create quizzes automatically."
+      },
+      "grammarChecker": {
+        "name": "Grammar Checker",
+        "description": "Check English & Japanese grammar."
+      },
+      "aiArticleReader": {
+        "name": "AI Article Reader",
+        "description": "AI helps summarize and explain articles."
+      },
+      "aiFlashcardMaker": {
+        "name": "AI Flashcard Maker",
+        "description": "Create flashcards automatically from text."
+      },
+      "mentorPython": {
+        "name": "Python Mentor",
+        "description": "Python code explanations, debugging."
+      },
+      "kamusJepang": {
+        "name": "Smart Japanese Dictionary",
+        "description": "Word meanings & example sentences."
+      },
+      "speakingPractice": {
+        "name": "Speaking Practice",
+        "description": "AI listens and responds."
+      },
+      "aiInterviewSimulator": {
+        "name": "AI Interview Simulator",
+        "description": "Simulate job interviews."
+      }
+    }
+  },
+  "featuresPage": {
+    "title": "Feature: {featureName}",
+    "comingSoon": "This feature is under development."
+  },
+  "languages": {
+    "id": "Indonesian",
+    "en": "English",
+    "ja": "Japanese"
+  }
+}

@@ -7,7 +7,10 @@ export default {
   theme: {
     extend:{
       //custom tema font,warna,dll.
+      fontFamily: {
+        sans: ['Inter', 'Noto Sans JP', 'system-ui', 'sans-serif'],
+      },
     },
   },
-  plugins: []
+  plugins: [],
 }
