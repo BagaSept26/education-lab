@@ -49,7 +49,10 @@
     },
     "featuresPage": {
         "title": "Fitur: {featureName}",
-        "comingSoon": "Fitur ini sedang dalam pengembangan."
+        "comingSoon": "Fitur ini sedang dalam pengembangan.",
+        "apiErrorGeneric": "Terjadi kesalahan dalam memproses permintaan Anda.",
+        "apiErrorNetwork": "Tidak dapat terhubung ke server. Periksa koneksi internet Anda.",
+        "apiError": "Error dari server"
     },
     "laguages": {
         "id": "Indonesia",
