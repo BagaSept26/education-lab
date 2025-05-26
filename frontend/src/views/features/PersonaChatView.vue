@@ -8,9 +8,9 @@ const {t} = useI18n()
 const router = useRouter()
 
 const featureName = t('dashboard.features.personaChat.name');
-const currentPersona = ref('Guru Bahasa Jepang')
+const currentPersona = ref('Guru Bahasa Jepang');
 
-const userMesssage = ref('');
+const userMessage = ref('');
 const chatHistory = ref([]);
 const isLoading = ref(false);
 const errorMessage = ref('');
