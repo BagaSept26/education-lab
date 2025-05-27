@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //url dari huggingface
-const HUGGING_FACE_REDIRECT_URL = 'https://username-spacename.hf.space';
+const HUGGING_FACE_REDIRECT_URL = 'https://bagaseptian-edulab.hf.space';
 
 const apiClient = axios.create({
     baseURL: HUGGING_FACE_REDIRECT_URL,
