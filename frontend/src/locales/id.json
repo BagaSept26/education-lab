@@ -102,6 +102,31 @@
       "errorNoSoalGenerated": "Tidak ada soal yang berhasil dihasilkan dari materi ini.",
       "errorGenerationFailed": "Gagal menghasilkan soal",
       "noQuestionsYet": "Hasil soal akan muncul di sini setelah Anda memasukkan materi dan menekan tombol 'Hasilkan Soal'."
+    },
+    "kamusJepang": {
+      "searchInputPlaceholder": "Masukkan kata Jepang (Kanji, Hiragana, Katakana, atau Romaji)...",
+      "searchButtonLabel": "Cari",
+      "loadingMessage": "Sedang mencari...",
+      "initialMessage": "Masukkan kata untuk memulai pencarian di kamus.",
+      "errorNoWord": "Silakan masukkan kata untuk dicari.",
+      "errorNotFound": "Kata '{word}' tidak ditemukan di kamus.",
+      "errorSearchFailed": "Gagal melakukan pencarian",
+      "noDefinitionsFound": "Tidak ada definisi yang ditemukan untuk entri ini."
+    },
+    "aiFlashcardMaker": {
+      "materialInputLabel": "Masukkan Teks Materi untuk Flashcard:",
+      "materialInputHint": "AI akan mencoba membuat pasangan pertanyaan/jawaban atau konsep/definisi dari teks ini.",
+      "materialInputPlaceholder": "Salin dan tempel materi di sini...",
+      "createButton": "Buat Flashcard",
+      "creatingButton": "Membuat...",
+      "cardCounter": "Kartu {current} dari {total}",
+      "prevButton": "Sebelumnya",
+      "nextButton": "Berikutnya",
+      "errorNoMaterial": "Silakan masukkan materi terlebih dahulu.",
+      "errorMaterialTooShort": "Materi terlalu pendek. Harap masukkan setidaknya 30 karakter.",
+      "errorNoFlashcardsGenerated": "Tidak ada flashcard yang berhasil dibuat dari materi ini.",
+      "errorCreationFailed": "Gagal membuat flashcard",
+      "clearAllTooltip": "Bersihkan Semua & Mulai Lagi"
     }
 },
 

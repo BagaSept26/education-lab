@@ -93,6 +93,31 @@
       "errorNoSoalGenerated": "No questions could be generated from this material.",
       "errorGenerationFailed": "Failed to generate questions",
       "noQuestionsYet": "Generated questions will appear here after you input material and press 'Generate Questions'."
+    },
+    "kamusJepang": {
+      "searchInputPlaceholder": "Enter a Japanese word (Kanji, Hiragana, Katakana, or Romaji)...",
+      "searchButtonLabel": "Search",
+      "loadingMessage": "Searching...",
+      "initialMessage": "Enter a word to start searching the dictionary.",
+      "errorNoWord": "Please enter a word to search.",
+      "errorNotFound": "The word '{word}' was not found in the dictionary.",
+      "errorSearchFailed": "Failed to perform search",
+      "noDefinitionsFound": "No definitions found for this entry."
+    },
+    "aiFlashcardMaker": {
+      "materialInputLabel": "Enter Material Text for Flashcards:",
+      "materialInputHint": "The AI will try to create question/answer or concept/definition pairs from this text.",
+      "materialInputPlaceholder": "Copy and paste your material here...",
+      "createButton": "Create Flashcards",
+      "creatingButton": "Creating...",
+      "cardCounter": "Card {current} of {total}",
+      "prevButton": "Previous",
+      "nextButton": "Next",
+      "errorNoMaterial": "Please enter the material first.",
+      "errorMaterialTooShort": "Material is too short. Please enter at least 30 characters.",
+      "errorNoFlashcardsGenerated": "No flashcards could be generated from this material.",
+      "errorCreationFailed": "Failed to create flashcards",
+      "clearAllTooltip": "Clear All & Start Over"
     }
   },
   "languages": {

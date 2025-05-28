@@ -93,6 +93,31 @@
       "errorNoSoalGenerated": "この教材からは問題が生成できませんでした。",
       "errorGenerationFailed": "問題の生成に失敗しました",
       "noQuestionsYet": "教材を入力して「問題を生成」ボタンを押すと、ここに生成された問題が表示されます。"
+    },
+    "kamusJepang": {
+      "searchInputPlaceholder": "日本語の単語（漢字、ひらがな、カタカナ、またはローマ字）を入力...",
+      "searchButtonLabel": "検索",
+      "loadingMessage": "検索中...",
+      "initialMessage": "単語を入力して辞書検索を開始してください。",
+      "errorNoWord": "検索する単語を入力してください。",
+      "errorNotFound": "単語「{word}」は辞書に見つかりませんでした。",
+      "errorSearchFailed": "検索に失敗しました",
+      "noDefinitionsFound": "このエントリーの定義は見つかりませんでした。"
+    },
+    "aiFlashcardMaker": {
+      "materialInputLabel": "フラッシュカード用の教材テキストを入力：",
+      "materialInputHint": "AIがこのテキストから質問/回答または概念/定義のペアを作成しようとします。",
+      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...",
+      "createButton": "フラッシュカードを作成",
+      "creatingButton": "作成中...",
+      "cardCounter": "カード {current}/{total}",
+      "prevButton": "前へ",
+      "nextButton": "次へ",
+      "errorNoMaterial": "最初に教材を入力してください。",
+      "errorMaterialTooShort": "教材が短すぎます。最低30文字入力してください。",
+      "errorNoFlashcardsGenerated": "この教材からはフラッシュカードが作成できませんでした。",
+      "errorCreationFailed": "フラッシュカードの作成に失敗しました",
+      "clearAllTooltip": "すべてクリアしてやり直す"
     }
   },
   "languages": {

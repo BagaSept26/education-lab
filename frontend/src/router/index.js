@@ -27,7 +27,7 @@ const routes= [
       name: 'FeatureWhisperTranscriber',
       component: () => import('../views/features/WhisperTranscriberView.vue'),
       meta: {
-        titleKey: 'dashboard.features.soalGenerator.name'
+        titleKey: 'dashboard.features.WhisperTransriber.name'
       }
     },
     {
