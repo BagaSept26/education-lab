@@ -1,5 +1,4 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createI18n } from 'vue-i18n'
@@ -14,11 +13,12 @@ import jaMessages from './locales/ja.json'
 
 //preferensi bahasa dari localstorage/browser
 const getInitialLocale = () => {
-    const savedLocal = localStorage.getItem('user-locale');
-    if (savedLocal){
-        return savedLocal;
+    const savedLocale = localStorage.getItem('user-locale');
+    if (savedLocale && ['id', 'en', 'ja'].includes(savedLocale)){
+        return savedLocale;
     }
-    return navigator.language.split('-'[0] || 'id');
+    const browserLang = navigator.language.split('-')[0];
+    return ['id', 'en', 'ja'].includes(browserLang) ? browserLang: 'id';
 }
 
 //setup i18n
@@ -31,7 +31,8 @@ const i18n = createI18n({
         en: enMessages,
         ja: jaMessages
     },
-    globalInjection: true
+    globalInjection: true,
+    warnHtmlMessage: false
 })
 
 const app = createApp(App)

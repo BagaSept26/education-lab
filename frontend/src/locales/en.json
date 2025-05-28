@@ -49,7 +49,51 @@
   },
   "featuresPage": {
     "title": "Feature: {featureName}",
-    "comingSoon": "This feature is under development."
+    "comingSoon": "This feature is under development.",
+    "backToDashboard": "Back to Dashboard",
+    "apiErrorGeneric": "An error occurred while processing your request.",
+    "apiErrorNetwork": "Could not connect to the server. Check your internet connection.",
+    "apiErrorNoData": "No data received from the server.",
+    "apiError": "Server error",
+    "personaChat": {
+      "typeMessagePlaceholder": "Type a message for {personaName}...",
+      "sendButtonLabel": "Send Message"
+    },
+    "whisperTranscriber": {
+      "uploadLabel": "Upload Your Audio File",
+      "selectFileButton": "Select a file",
+      "dragAndDrop": "or drag and drop",
+      "noFileChosen": "No file chosen yet",
+      "selectedFileName": "Selected file",
+      "transcribeButton": "Transcribe Audio",
+      "transcribingButton": "Transcribing...",
+      "transcriptionResultTitle": "Transcription Result:",
+      "errorNoFileSelected": "Please select an audio file first.",
+      "errorInvalidFileType": "Invalid file type. Only MP3 or WAV are allowed.",
+      "errorFileSizeTooLarge": "File size is too large. Maximum {maxSize}MB.",
+      "errorTranscriptionFailed": "Failed to transcribe audio",
+      "textCopied": "Text copied to clipboard!",
+      "copyFailed": "Failed to copy text.",
+      "copyButtonTooltip": "Copy Transcription"
+    },
+    "soalGenerator": {
+      "materialInputLabel": "Enter Your Subject Material Text:",
+      "materialInputHint": "The more detailed and longer the material, the better the quality of the generated questions.",
+      "materialInputPlaceholder": "Copy and paste your subject material here...",
+      "numberOfQuestionsLabel": "Number of Questions:",
+      "questionTypeLabel": "Question Type:",
+      "questionTypeMultipleChoice": "Multiple Choice",
+      "generateButton": "Generate Questions",
+      "generatingButton": "Generating...",
+      "generatedQuestionsTitle": "Generated Questions:",
+      "answerKeyLabel": "Answer Key",
+      "explanationLabel": "Explanation",
+      "errorNoMaterial": "Please enter the subject material first.",
+      "errorMaterialTooShort": "Material is too short. Please enter at least 50 characters.",
+      "errorNoSoalGenerated": "No questions could be generated from this material.",
+      "errorGenerationFailed": "Failed to generate questions",
+      "noQuestionsYet": "Generated questions will appear here after you input material and press 'Generate Questions'."
+    }
   },
   "languages": {
     "id": "Indonesian",

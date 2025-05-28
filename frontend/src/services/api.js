@@ -40,6 +40,7 @@ export default {
   chatWithPersona(payload) {
     // payload = { persona: 'guru_bahasa_jepang', message: 'こんにちは' }
     return apiClient.post('/persona-chat', payload);
+    
   },
 
   // Fungsi untuk fitur WhisperTranscriber

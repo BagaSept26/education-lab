@@ -1,62 +1,120 @@
 {
-    "appName": "Education Lab",
-    "appSlogan": "Laboratorium Edukasi Berbasis AI.",
-    "footerText": "© {year} Edication Lab. Eksperimen Belajar.",
-    "dashboard": {
-        "title": "Dashboard Fitur",
-        "features": {
-            "personaChat": {
-                "name": "PersonaChat",
-                "description": "Ngobrol dengan AI persona."
-            },
-            "whisperTranscriber": {
-                "name": "Transkripsi Audio",
-                "description": "Ubah audio jadi teks."
-            },
-            "soalGenerator": {
-                "name": "Generator Soal",
-                "description": "Buat soal otomatis."
-            },
-            "grammarChecker": {
-                "name": "Pengecek Tata Bahasa",
-                "description": "Cek tata bahasa Iggris & Jepang."
-            },
-            "aiArticleReader": {
-                "name": "Pembaca Artikel AI",
-                "description": "AI bantu ringkas dan jelaskan artikel."
-            },
-            "aiFlashcardMaker": {
-                "name": "Pembuat Flashcard AI",
-                "description": "Buat flashcard otomatis dari teks."
-            },
-            "mentorPython": {
-                "name": "Mentor Python",
-                "description": "Penjelasan kode Python, debugging."
-            },
-            "kamusJepang": {
-                "name":"Kamus Jepang Pintar",
-                "description": "Makna kata dan contoh kalimat"
-            },
-            "speakingPractice": {
-                "name": "Latihan Berbicara",
-                "description": "AI mendengar dan merespond."
-            },
-            "aiInterviewSimulator": {
-                "name": "Simulator Wawancara AI",
-                "description": "Simulasi wawancara kerja."
-            }
+"appName": "Education Lab",
+"appSlogan": "Laboratorium Edukasi Berbasis AI.",
+"footerText": "© {year} Education Lab. Eksperimen Belajar.",
+"dashboard": {
+    "title": "Dashboard Fitur",
+    "features": {
+        "personaChat": {
+            "name": "Persona Chat",
+            "description": "Ngobrol dengan AI persona."
+        },
+        "whisperTranscriber": {
+            "name": "Transkripsi Audio",
+            "description": "Ubah audio jadi teks."
+        },
+        "soalGenerator": {
+            "name": "Generator Soal",
+            "description": "Buat soal otomatis."
+        },
+        "grammarChecker": {
+            "name": "Pengecek Tata Bahasa",
+            "description": "Cek tata bahasa Iggris & Jepang."
+        },
+        "aiArticleReader": {
+            "name": "Pembaca Artikel AI",
+            "description": "AI bantu ringkas dan jelaskan artikel."
+        },
+        "aiFlashcardMaker": {
+            "name": "Pembuat Flashcard AI",
+            "description": "Buat flashcard otomatis dari teks."
+        },
+        "mentorPython": {
+            "name": "Mentor Python",
+            "description": "Penjelasan kode Python, debugging."
+        },
+        "kamusJepang": {
+            "name":"Kamus Jepang Pintar",
+            "description": "Makna kata dan contoh kalimat"
+        },
+        "speakingPractice": {
+            "name": "Latihan Berbicara",
+            "description": "AI mendengar dan merespond."
+        },
+        "aiInterviewSimulator": {
+            "name": "Simulator Wawancara AI",
+            "description": "Simulasi wawancara kerja."
         }
-    },
-    "featuresPage": {
-        "title": "Fitur: {featureName}",
-        "comingSoon": "Fitur ini sedang dalam pengembangan.",
-        "apiErrorGeneric": "Terjadi kesalahan dalam memproses permintaan Anda.",
-        "apiErrorNetwork": "Tidak dapat terhubung ke server. Periksa koneksi internet Anda.",
-        "apiError": "Error dari server"
-    },
-    "laguages": {
-        "id": "Indonesia",
-        "en": "Iggris",
-        "ja": "Jepang"
     }
+},
+"featuresPage": {
+    "title": "Fitur: {featureName}",
+    "comingSoon": "Fitur ini sedang dalam pengembangan.",
+    "apiErrorGeneric": "Terjadi kesalahan dalam memproses permintaan Anda.",
+    "apiErrorNetwork": "Tidak dapat terhubung ke server. Periksa koneksi internet Anda.",
+    "apiError": "Error dari server",
+    "backToDashboard": "Kembali ke Dashboard",
+    "personaChat": {
+        "typeMessagePlaceholder": "Ketik pesan untuk {personaName}...",
+        "sendButtonLabel": "Kirim Pesan",
+        "personas":{
+            "guruJepang": "Guru Bahasa Jepang",
+            "mentorPython": "Mentor Python",
+            "jlptN5": "Simulasi JLPT N5",
+            "toeflTrainer": "Pelatih TOEFL"
+        },
+        "welcomeMessage": "Halo! Saya {personaName}. Ada yang bisa saya bantu?",
+        "defaultAiName": "AI",
+        "clearChatTooltip": "Bersihkan Obrolan",
+        "aiTyping": "AI sedang mengetik..."
+    },
+    "whisperTranscriber": {
+    "uploadLabel": "Unggah File Audio Anda",
+    "selectedFileButton": "Pilih File",
+    "dragandDrop": "atau seet dan lepas disini",
+    "noFileChosen": "Belum ada file dipilih",
+    "selectedFileName": "file terpilih",
+    "transcribeButton": "Mentransripsikan Audio",
+    "transcribingButton": "Mentranskripsi...",
+    "transcriptionResultTitle": "Hasil Transkripsi",
+    "errorNoFileSelected": "silahkan pilih file audio terlebih dahulu.",
+    "errorInvalidFileType": "Tipe file tidak valid. Hanya MP3 atau WAV yang diizinkan.",
+    "errorFileSizeTooLarge": "ukuran file terlalu besar. Maksimum {maxSize}MB.",
+    "errorTranscriptionFailed": "Gagal mentranskripsi audio",
+    "textCopied": "Teks berhasil disalin ke clipboard!",
+    "copyFailed": "Gagal menyalin teks",
+    "copyButtonTooltip" : "salin Transkripsi"
+    },
+    "soalGenerator": {
+      "materialInputLabel": "Masukkan Teks Materi Pelajaran:",
+      "materialInputHint": "Semakin detail dan panjang materi, semakin baik kualitas soal yang dihasilkan.",
+      "materialInputPlaceholder": "Salin dan tempel materi pelajaran di sini...",
+      "numberOfQuestionsLabel": "Jumlah Soal:",
+      "questionTypeLabel": "Tipe Soal:",
+      "questionTypeMultipleChoice": "Pilihan Ganda",
+      "generateButton": "Hasilkan Soal",
+      "generatingButton": "Menghasilkan...",
+      "generatedQuestionsTitle": "Soal yang Dihasilkan:",
+      "answerKeyLabel": "Kunci Jawaban",
+      "explanationLabel": "Penjelasan",
+      "errorNoMaterial": "Silakan masukkan materi pelajaran terlebih dahulu.",
+      "errorMaterialTooShort": "Materi terlalu pendek. Harap masukkan setidaknya 50 karakter.",
+      "errorNoSoalGenerated": "Tidak ada soal yang berhasil dihasilkan dari materi ini.",
+      "errorGenerationFailed": "Gagal menghasilkan soal",
+      "noQuestionsYet": "Hasil soal akan muncul di sini setelah Anda memasukkan materi dan menekan tombol 'Hasilkan Soal'."
+    }
+},
+
+
+"laguages": {
+    "id": "Indonesia",
+    "en": "Iggris",
+    "ja": "Jepang"
+},
+"notFoundPage": {
+  "title": "Halaman Tidak Ditemukan",
+  "message": "Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.",
+  "backToHome": "Kembali ke Beranda"
+},
+"apiErrorNoData": "Tidak ada data Transkripsi yang diterima dari server."
 }

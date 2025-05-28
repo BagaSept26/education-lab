@@ -49,7 +49,51 @@
   },
   "featuresPage": {
     "title": "機能: {featureName}",
-    "comingSoon": "この機能は開発中です。"
+    "comingSoon": "この機能は開発中です。",
+    "backToDashboard": "ダッシュボードに戻る",
+    "apiErrorGeneric": "リクエストの処理中にエラーが発生しました。",
+    "apiErrorNetwork": "サーバーに接続できませんでした。インターネット接続を確認してください。",
+    "apiErrorNoData": "サーバーからデータを受信できませんでした。",
+    "apiError": "サーバーエラー",
+    "personaChat": {
+      "typeMessagePlaceholder": "{personaName}へのメッセージを入力...",
+      "sendButtonLabel": "メッセージを送信"
+    },
+    "whisperTranscriber": {
+      "uploadLabel": "音声ファイルをアップロード",
+      "selectFileButton": "ファイルを選択",
+      "dragAndDrop": "またはドラッグ＆ドロップ",
+      "noFileChosen": "まだファイルが選択されていません",
+      "selectedFileName": "選択されたファイル",
+      "transcribeButton": "音声を文字起こし",
+      "transcribingButton": "文字起こし中...",
+      "transcriptionResultTitle": "文字起こし結果：",
+      "errorNoFileSelected": "最初に音声ファイルを選択してください。",
+      "errorInvalidFileType": "無効なファイルタイプです。MP3またはWAVのみ許可されています。",
+      "errorFileSizeTooLarge": "ファイルサイズが大きすぎます。最大 {maxSize}MB です。",
+      "errorTranscriptionFailed": "音声の文字起こしに失敗しました",
+      "textCopied": "テキストをクリップボードにコピーしました！",
+      "copyFailed": "テキストのコピーに失敗しました。",
+      "copyButtonTooltip": "文字起こしをコピー"
+    },
+    "soalGenerator": {
+      "materialInputLabel": "教材のテキストを入力してください：",
+      "materialInputHint": "教材が詳細で長いほど、生成される問題の質が向上します。",
+      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...",
+      "numberOfQuestionsLabel": "問題数：",
+      "questionTypeLabel": "問題タイプ：",
+      "questionTypeMultipleChoice": "多肢選択式",
+      "generateButton": "問題を生成",
+      "generatingButton": "生成中...",
+      "generatedQuestionsTitle": "生成された問題：",
+      "answerKeyLabel": "解答",
+      "explanationLabel": "解説",
+      "errorNoMaterial": "最初に教材を入力してください。",
+      "errorMaterialTooShort": "教材が短すぎます。最低50文字入力してください。",
+      "errorNoSoalGenerated": "この教材からは問題が生成できませんでした。",
+      "errorGenerationFailed": "問題の生成に失敗しました",
+      "noQuestionsYet": "教材を入力して「問題を生成」ボタンを押すと、ここに生成された問題が表示されます。"
+    }
   },
   "languages": {
     "id": "インドネシア語",
