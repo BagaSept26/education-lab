@@ -2,7 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { useRouter } from 'vue-router';
 import { ref, computed } from 'vue';
-import api from '@services/api';
+import api from '@/services/api';
 
 const { t } = useI18n();
 const router = useRouter();
