@@ -160,6 +160,28 @@
         "noErrorsFound": "Tidak ada kesalah tata bahasa yang terdeteksi.",
         "initialMessage": "Masukan teks dan pilih bahasa untuk memulai.",
         "clearAllTooltip": "Bersihkan Input dan Hasil."
+    },
+    "mentorPython": {
+        "welcomeMessage": "Halo! Saya Mentor Python pribadimu. Tanyakan apa saja tentang Python!",
+        "typeMessagePlaceholder": "Ketik pertanyaan Python Anda...",
+        "sendButtonLabel": "Kirim",
+        "clearChatTooltip": "Bersihkan Obrolan",
+        "aiTyping": "Mentor sedang berpikir..."
+    },
+    "aiInterviewSimulator": {
+        "types": {
+            "sswJapan": "SSW Jepang",
+            "itDeveloper": "Pengembanga IT",
+            "generalBehavioral": "Perilaku umum"
+        },
+        "welcomeMessage": "Selamat datang di simulasi wawancara untuk {interviewType}. Saya akan menjadi pewaawancara anda. mari kita mulai.",
+        "defaultInterviewerName": "Pewawancara AI",
+        "typeAnswerPlaceholder": "Ketik jawaban anda disini...",
+        "InterviewEndedPlaceholder": "wawancara telah selesai. Pilih tipe lain atau mulai ulang.",
+        "sendButtonLabel": "Kirim Jawaban",
+        "restartTooltip": "Mulai Ulang Wawancara",
+        "aiTyping": "Pewawancara sedang menyiapkan perntanyaan..",
+        "interviewEndedMessage": "Terima kasih, sesi wawancara ini telah berakhir. Anda bisa memulai sesi baru dengan memilih tipe wawancara atau menekan tombol mulai ulang."
     }
 },
 "notFoundPage": {

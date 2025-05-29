@@ -146,6 +146,13 @@
         "noErrorsFound": "Tidak ada kesalah tata bahasa yang terdeteksi.",
         "initialMessage": "Masukan teks dan pilih bahasa untuk memulai.",
         "clearAllTooltip": "Bersihkan Input dan Hasil."
+    },
+    "mentorPython": {
+        "welcomeMessage": "Halo! Saya Mentor Python pribadimu. Tanyakan apa saja tentang Python!",
+        "typeMessagePlaceholder": "Ketik pertanyaan Python Anda...",
+        "sendButtonLabel": "Kirim",
+        "clearChatTooltip": "Bersihkan Obrolan",
+        "aiTyping": "Mentor sedang berpikir..."
     }
   },
   "languages": {

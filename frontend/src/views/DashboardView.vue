@@ -7,10 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const { t,locale } = useI18n()
-const router = useRouter()
-const dashboardHeader = ref(null)
-const featureCardsRefs = ref([])
+const { t,locale } = useI18n();
+const router = useRouter();
+const dashboardHeader = ref(null);
+const featureCardsRefs = ref([]);
 
 const featuresConfig = [
   { id: 'personaChat', icon: '🤖', routeName: 'FeaturePersonaChat', color:'text-sky-400', hoverColor: 'hover:shadow-sky-500/40'},
@@ -23,7 +23,7 @@ const featuresConfig = [
   { id: 'kamusJepang', icon: '辞典', routeName: 'FeatureKamusJepang', color: 'text-fuchsia-400', hoverColor: 'hover:shadow-fuchsia-500/40' },
   { id: 'speakingPractice', icon: '🗣️', routeName: 'FeatureSpeakingPractice', color: 'text-cyan-400', hoverColor: 'hover:shadow-cyan-500/40' },
   { id: 'aiInterviewSimulator', icon: '💼', routeName: 'FeatureAiInterviewSimulator', color: 'text-violet-400', hoverColor: 'hover:shadow-violet-500/40' },
-]
+];
 function navigateToFeature(routeName) {
   if(routeName) {
     router.push({ name: routeName })
