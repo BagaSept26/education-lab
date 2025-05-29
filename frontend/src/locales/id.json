@@ -1,4 +1,9 @@
 {
+"laguages": {
+    "id": "Indonesia",
+    "en": "Iggris",
+    "ja": "Jepang"
+},
 "appName": "Education Lab",
 "appSlogan": "Laboratorium Edukasi Berbasis AI.",
 "footerText": "© {year} Education Lab. Eksperimen Belajar.",
@@ -139,14 +144,23 @@
         "errorProcessingFailed": "Gagal memproses artikel",
         "titleNotAvailable": "Ringkasan tidak tersedia.",
         "clearAllTooltip": "Bersihkan URL dan hasil"
+    },
+    "grammarChecker":{
+        "textInputLabel": "Masukan Teks untuk Diperiksa: ",
+        "textInputPlaceholder": "Ketik atau tempel teks di sini...",
+        "languageSelectLabel": "Pilih Bahasa Teks: ",
+        "langEnglish": "Inggris",
+        "langJapanese": "Jepang",
+        "checkButton": "Periksa Tata Bahasa",
+        "checkingButton": "Memeriksa...",
+        "resultTitle": "Hasil Pengecekan: ",
+        "suggestionTooltip": "Saran",
+        "errorNoText": "Silahkan masukan teks terlebih dahulu.",
+        "errorCheckFailed": "Gagal memeriksa tata bahasa",
+        "noErrorsFound": "Tidak ada kesalah tata bahasa yang terdeteksi.",
+        "initialMessage": "Masukan teks dan pilih bahasa untuk memulai.",
+        "clearAllTooltip": "Bersihkan Input dan Hasil."
     }
-},
-
-
-"laguages": {
-    "id": "Indonesia",
-    "en": "Iggris",
-    "ja": "Jepang"
 },
 "notFoundPage": {
   "title": "Halaman Tidak Ditemukan",
