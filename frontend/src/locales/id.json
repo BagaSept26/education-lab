@@ -1,9 +1,4 @@
 {
-"laguages": {
-    "id": "Indonesia",
-    "en": "Iggris",
-    "ja": "Jepang"
-},
 "appName": "Education Lab",
 "appSlogan": "Laboratorium Edukasi Berbasis AI.",
 "footerText": "© {year} Education Lab. Eksperimen Belajar.",
@@ -182,6 +177,15 @@
         "restartTooltip": "Mulai Ulang Wawancara",
         "aiTyping": "Pewawancara sedang menyiapkan perntanyaan..",
         "interviewEndedMessage": "Terima kasih, sesi wawancara ini telah berakhir. Anda bisa memulai sesi baru dengan memilih tipe wawancara atau menekan tombol mulai ulang."
+    },
+    "speakingPractice": {
+      "startRecordingButton": "Mulai Merekam", "stopRecordingButton": "Hentikan Rekaman", "recordingInProgress": "Sedang merekam...",
+      "initialMessage": "Tekan tombol untuk mulai berlatih berbicara.", "processingAudio": "Memproses audio Anda...",
+      "yourSpeechTitle": "Ucapan Anda:", "aiResponseTitle": "Balasan AI:",
+      "errorMicAccess": "Tidak dapat mengakses mikrofon. Pastikan Anda telah memberikan izin. Error: {error}",
+      "errorNoMediaSupport": "Browser Anda tidak mendukung perekaman audio.", "errorNoTranscript": "Tidak dapat mentranskripsi ucapan Anda.",
+      "errorNoAiReply": "AI tidak memberikan balasan.", "errorApiFailed": "Gagal mengirim audio atau menerima balasan",
+      "clearAllTooltip": "Bersihkan Sesi"
     }
 },
 "notFoundPage": {
@@ -189,5 +193,9 @@
   "message": "Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.",
   "backToHome": "Kembali ke Beranda"
 },
-"apiErrorNoData": "Tidak ada data Transkripsi yang diterima dari server."
+"languages": {
+    "id": "Indonesia",
+    "en": "English",
+    "ja": "Jepang"
+    }
 }

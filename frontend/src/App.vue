@@ -10,9 +10,9 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
     <!--header global-->
     <!-- <TheHeader v-if="!route.meta.hideHeader"/> -->
     <!--Konten utama-->
-    <main class="flex-grow w-full">
+    <main class="flex-grow w-full overflow-x-hidden">
       <RouterView v-slot="{ Component, route }">
-        <Transition name="page-fade" mode="out-in">
+        <Transition name="page-opacity-transition" mode="out-in">
           <component :is="Component" :key="route.path"/>
         </Transition>
       </RouterView>
@@ -24,12 +24,12 @@ import LanguageSwitcher from './components/LanguageSwitcher.vue'
 
 <style scoped>
 /* styling spesifik */
-.page-fade-enter-active,
-.page-fade-leave-active{
-  transition: opacity 0.3s ease;
+.page-opacity-transition-enter-active,
+.page-opacity-transition-leave-active{
+  transition: opacity 0.3s ease-in-out;
 }
-.page-fade-enter-from,
-.page-fade-leave-to {
+.page-opacity-transition-enter-from,
+.page-opacity-transition-leave-to {
   opacity: 0;
 }
 </style>

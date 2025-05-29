@@ -4,47 +4,18 @@
   "footerText": "© {year} エデュケーション・ラボ。学びの実験。",
   "dashboard": {
     "title": "機能ダッシュボード",
+    "exploreButton": "探索する",
     "features": {
-      "personaChat": {
-        "name": "ペルソナチャット",
-        "description": "AIペルソナとチャット。"
-      },
-      "whisperTranscriber": {
-        "name": "音声文字起こし",
-        "description": "音声をテキストに変換。"
-      },
-      "soalGenerator": {
-        "name": "問題ジェネレーター",
-        "description": "問題を自動作成。"
-      },
-      "grammarChecker": {
-        "name": "文法チェッカー",
-        "description": "英語と日本語の文法をチェック。"
-      },
-      "aiArticleReader": {
-        "name": "AI記事リーダー",
-        "description": "AIが記事の要約と説明を補助。"
-      },
-      "aiFlashcardMaker": {
-        "name": "AIフラッシュカードメーカー",
-        "description": "テキストから自動でフラッシュカードを作成。"
-      },
-      "mentorPython": {
-        "name": "Pythonメンター",
-        "description": "Pythonコードの説明、デバッグ。"
-      },
-      "kamusJepang": {
-        "name": "スマート日本語辞書",
-        "description": "単語の意味と例文。"
-      },
-      "speakingPractice": {
-        "name": "スピーキング練習",
-        "description": "AIが聞いて応答。"
-      },
-      "aiInterviewSimulator": {
-        "name": "AI面接シミュレーター",
-        "description": "就職面接のシミュレーション。"
-      }
+      "personaChat": { "name": "ペルソナチャット", "description": "AIペルソナとチャット。" },
+      "whisperTranscriber": { "name": "音声文字起こし", "description": "音声をテキストに変換。" },
+      "soalGenerator": { "name": "問題ジェネレーター", "description": "問題を自動作成。" },
+      "grammarChecker": { "name": "文法チェッカー", "description": "英語と日本語の文法をチェック。" },
+      "aiArticleReader": { "name": "AI記事リーダー", "description": "AIが記事の要約と説明を補助。" },
+      "aiFlashcardMaker": { "name": "AIフラッシュカードメーカー", "description": "テキストから自動でフラッシュカードを作成。" },
+      "mentorPython": { "name": "Pythonメンター", "description": "Pythonコードの説明、デバッグ。" },
+      "kamusJepang": { "name": "スマート日本語辞書", "description": "単語の意味と例文。" },
+      "speakingPractice": { "name": "スピーキング練習", "description": "AIが聞いて応答。" },
+      "aiInterviewSimulator": { "name": "AI面接シミュレーター", "description": "就職面接のシミュレーション。" }
     }
   },
   "featuresPage": {
@@ -56,104 +27,86 @@
     "apiErrorNoData": "サーバーからデータを受信できませんでした。",
     "apiError": "サーバーエラー",
     "personaChat": {
-      "typeMessagePlaceholder": "{personaName}へのメッセージを入力...",
-      "sendButtonLabel": "メッセージを送信"
+      "typeMessagePlaceholder": "{personaName}へのメッセージを入力...", "sendButtonLabel": "メッセージを送信",
+      "personas": { "guruJepang": "日本語教師", "mentorPython": "Pythonメンター", "jlptN5": "JLPT N5 シミュレーター", "toeflTrainer": "TOEFLトレーナー" },
+      "welcomeMessage": "こんにちは！私は{personaName}です。何かお手伝いできますか？",
+      "defaultAiName": "AI", "clearChatTooltip": "チャットをクリア", "aiTyping": "AIが入力中..."
     },
     "whisperTranscriber": {
-      "uploadLabel": "音声ファイルをアップロード",
-      "selectFileButton": "ファイルを選択",
-      "dragAndDrop": "またはドラッグ＆ドロップ",
-      "noFileChosen": "まだファイルが選択されていません",
-      "selectedFileName": "選択されたファイル",
-      "transcribeButton": "音声を文字起こし",
-      "transcribingButton": "文字起こし中...",
-      "transcriptionResultTitle": "文字起こし結果：",
-      "errorNoFileSelected": "最初に音声ファイルを選択してください。",
-      "errorInvalidFileType": "無効なファイルタイプです。MP3またはWAVのみ許可されています。",
-      "errorFileSizeTooLarge": "ファイルサイズが大きすぎます。最大 {maxSize}MB です。",
-      "errorTranscriptionFailed": "音声の文字起こしに失敗しました",
-      "textCopied": "テキストをクリップボードにコピーしました！",
-      "copyFailed": "テキストのコピーに失敗しました。",
-      "copyButtonTooltip": "文字起こしをコピー"
+      "uploadLabel": "音声ファイルをアップロード", "selectFileButton": "ファイルを選択", "dragAndDrop": "またはドラッグ＆ドロップ",
+      "noFileChosen": "まだファイルが選択されていません", "selectedFileName": "選択されたファイル", "transcribeButton": "音声を文字起こし",
+      "transcribingButton": "文字起こし中...", "transcriptionResultTitle": "文字起こし結果：",
+      "errorNoFileSelected": "最初に音声ファイルを選択してください。", "errorInvalidFileType": "無効なファイルタイプです。MP3またはWAVのみ許可されています。",
+      "errorFileSizeTooLarge": "ファイルサイズが大きすぎます。最大 {maxSize}MB です。", "errorTranscriptionFailed": "音声の文字起こしに失敗しました",
+      "textCopied": "テキストをクリップボードにコピーしました！", "copyFailed": "テキストのコピーに失敗しました。", "copyButtonTooltip": "文字起こしをコピー"
     },
     "soalGenerator": {
-      "materialInputLabel": "教材のテキストを入力してください：",
-      "materialInputHint": "教材が詳細で長いほど、生成される問題の質が向上します。",
-      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...",
-      "numberOfQuestionsLabel": "問題数：",
-      "questionTypeLabel": "問題タイプ：",
-      "questionTypeMultipleChoice": "多肢選択式",
-      "generateButton": "問題を生成",
-      "generatingButton": "生成中...",
-      "generatedQuestionsTitle": "生成された問題：",
-      "answerKeyLabel": "解答",
-      "explanationLabel": "解説",
-      "errorNoMaterial": "最初に教材を入力してください。",
+      "materialInputLabel": "教材のテキストを入力してください：", "materialInputHint": "教材が詳細で長いほど、生成される問題の質が向上します。",
+      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...", "numberOfQuestionsLabel": "問題数：",
+      "questionTypeLabel": "問題タイプ：", "questionTypeMultipleChoice": "多肢選択式", "generateButton": "問題を生成",
+      "generatingButton": "生成中...", "generatedQuestionsTitle": "生成された問題：", "answerKeyLabel": "解答",
+      "explanationLabel": "解説", "errorNoMaterial": "最初に教材を入力してください。",
       "errorMaterialTooShort": "教材が短すぎます。最低50文字入力してください。",
-      "errorNoSoalGenerated": "この教材からは問題が生成できませんでした。",
-      "errorGenerationFailed": "問題の生成に失敗しました",
+      "errorNoSoalGenerated": "この教材からは問題が生成できませんでした。", "errorGenerationFailed": "問題の生成に失敗しました",
       "noQuestionsYet": "教材を入力して「問題を生成」ボタンを押すと、ここに生成された問題が表示されます。"
     },
-    "kamusJepang": {
-      "searchInputPlaceholder": "日本語の単語（漢字、ひらがな、カタカナ、またはローマ字）を入力...",
-      "searchButtonLabel": "検索",
-      "loadingMessage": "検索中...",
-      "initialMessage": "単語を入力して辞書検索を開始してください。",
-      "errorNoWord": "検索する単語を入力してください。",
-      "errorNotFound": "単語「{word}」は辞書に見つかりませんでした。",
-      "errorSearchFailed": "検索に失敗しました",
-      "noDefinitionsFound": "このエントリーの定義は見つかりませんでした。"
+    "grammarChecker": {
+      "textInputLabel": "チェックするテキストを入力：", "textInputPlaceholder": "ここにテキストを入力または貼り付け...",
+      "languageSelectLabel": "テキストの言語を選択：", "langEnglish": "英語", "langJapanese": "日本語",
+      "checkButton": "文法をチェック", "checkingButton": "チェック中...", "resultTitle": "チェック結果：",
+      "suggestionTooltip": "提案", "errorNoText": "最初にテキストを入力してください。", "errorCheckFailed": "文法チェックに失敗しました",
+      "noErrorsFound": "文法エラーは検出されませんでした。", "initialMessage": "テキストを入力し言語を選択して文法チェックを開始してください。",
+      "clearAllTooltip": "入力と結果をクリア"
+    },
+    "aiArticleReader": {
+      "urlInputLabel": "記事のURLを入力：", "urlInputPlaceholder": "https://example.com/interesting-article",
+      "processButton": "記事を処理", "processingButton": "処理中...",
+      "loadingMessage": "記事を取得・分析中...", "initialMessage": "AIに記事を読ませて要約させるには、URLを入力してください。",
+      "errorNoUrl": "最初に記事のURLを入力してください。", "errorInvalidUrl": "URL形式が無効です。http:// または https:// で始まることを確認してください。",
+      "errorProcessingFailed": "記事の処理に失敗しました", "titleNotAvailable": "タイトル利用不可",
+      "summaryNotAvailable": "要約利用不可。", "clearAllTooltip": "URLと結果をクリア"
     },
     "aiFlashcardMaker": {
-      "materialInputLabel": "フラッシュカード用の教材テキストを入力：",
-      "materialInputHint": "AIがこのテキストから質問/回答または概念/定義のペアを作成しようとします。",
-      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...",
-      "createButton": "フラッシュカードを作成",
-      "creatingButton": "作成中...",
-      "cardCounter": "カード {current}/{total}",
-      "prevButton": "前へ",
-      "nextButton": "次へ",
-      "errorNoMaterial": "最初に教材を入力してください。",
+      "materialInputLabel": "フラッシュカード用の教材テキストを入力：", "materialInputHint": "AIがこのテキストから質問/回答または概念/定義のペアを作成しようとします。",
+      "materialInputPlaceholder": "ここに教材をコピー＆ペーストしてください...", "createButton": "フラッシュカードを作成",
+      "creatingButton": "作成中...", "cardCounter": "カード {current}/{total}", "prevButton": "前へ",
+      "nextButton": "次へ", "errorNoMaterial": "最初に教材を入力してください。",
       "errorMaterialTooShort": "教材が短すぎます。最低30文字入力してください。",
-      "errorNoFlashcardsGenerated": "この教材からはフラッシュカードが作成できませんでした。",
-      "errorCreationFailed": "フラッシュカードの作成に失敗しました",
+      "errorNoFlashcardsGenerated": "この教材からはフラッシュカードが作成できませんでした。", "errorCreationFailed": "フラッシュカードの作成に失敗しました",
       "clearAllTooltip": "すべてクリアしてやり直す"
     },
-    "aiArticleReader":{
-        "urlInputLabel": "Masukan URL Artikel:",
-        "urlInputPlaceholder": "https://contoh.com/artikel-menarik",
-        "processButton": "Memproses...",
-        "loadingMessage": "Sedang Mengambil dan menganalisis artikel...",
-        "initialMessage": "Masuka URL artikel untuk dibaca dan diringkas oleh AI.",
-        "errorNoUrl": "Silahkan masukan URL artikel terlebih dahulu.",
-        "errorInvalidUrl": "Format URL tidak valid. Pastikan mennggunakan http:// atau https://",
-        "errorProcessingFailed": "Gagal memproses artikel",
-        "titleNotAvailable": "Ringkasan tidak tersedia.",
-        "clearAllTooltip": "Bersihkan URL dan hasil"
-    },
-    "grammarChecker":{
-        "textInputLabel": "Masukan Teks untuk Diperiksa: ",
-        "textInputPlaceholder": "Ketik atau tempel teks di sini...",
-        "languageSelectLabel": "Pilih Bahasa Teks: ",
-        "langEnglish": "Inggris",
-        "langJapanese": "Jepang",
-        "checkButton": "Periksa Tata Bahasa",
-        "checkingButton": "Memeriksa...",
-        "resultTitle": "Hasil Pengecekan: ",
-        "suggestionTooltip": "Saran",
-        "errorNoText": "Silahkan masukan teks terlebih dahulu.",
-        "errorCheckFailed": "Gagal memeriksa tata bahasa",
-        "noErrorsFound": "Tidak ada kesalah tata bahasa yang terdeteksi.",
-        "initialMessage": "Masukan teks dan pilih bahasa untuk memulai.",
-        "clearAllTooltip": "Bersihkan Input dan Hasil."
-    },
     "mentorPython": {
-        "welcomeMessage": "Halo! Saya Mentor Python pribadimu. Tanyakan apa saja tentang Python!",
-        "typeMessagePlaceholder": "Ketik pertanyaan Python Anda...",
-        "sendButtonLabel": "Kirim",
-        "clearChatTooltip": "Bersihkan Obrolan",
-        "aiTyping": "Mentor sedang berpikir..."
+      "welcomeMessage": "こんにちは！あなたの専属Pythonメンターです。Pythonについて何でも聞いてください！", "typeMessagePlaceholder": "Pythonの質問を入力してください...",
+      "sendButtonLabel": "送信", "clearChatTooltip": "チャットをクリア", "aiTyping": "メンターが考え中..."
+    },
+    "kamusJepang": {
+      "searchInputPlaceholder": "日本語の単語（漢字、ひらがな、カタカナ、またはローマ字）を入力...", "searchButtonLabel": "検索",
+      "loadingMessage": "検索中...", "initialMessage": "単語を入力して辞書検索を開始してください。",
+      "errorNoWord": "検索する単語を入力してください。", "errorNotFound": "単語「{word}」は辞書に見つかりませんでした。",
+      "errorSearchFailed": "検索に失敗しました", "noDefinitionsFound": "このエントリーの定義は見つかりませんでした。"
+    },
+    "aiInterviewSimulator": {
+      "types": { "sswJapan": "特定技能（日本）", "itDeveloper": "IT開発者", "generalBehavioral": "一般行動面接" },
+      "welcomeMessage": "{interviewType}の面接シミュレーションへようこそ。私が面接官です。始めましょう。",
+      "defaultInterviewerName": "AI面接官", "typeAnswerPlaceholder": "ここに回答を入力...",
+      "interviewEndedPlaceholder": "面接は終了しました。別のタイプを選択するか、再開してください。", "sendButtonLabel": "回答を送信",
+      "restartTooltip": "面接を再開", "aiTyping": "面接官が質問を準備中...",
+      "interviewEndedMessage": "ありがとうございました。この面接セッションは終了しました。面接タイプを選択するか、再開ボタンを押して新しいセッションを開始できます。"
+    },
+    "speakingPractice": {
+      "startRecordingButton": "録音開始", "stopRecordingButton": "録音停止", "recordingInProgress": "録音中...",
+      "initialMessage": "ボタンを押してスピーキング練習を開始してください。", "processingAudio": "音声を処理中...",
+      "yourSpeechTitle": "あなたの発言：", "aiResponseTitle": "AIの応答：",
+      "errorMicAccess": "マイクにアクセスできませんでした。許可を確認してください。エラー：{error}",
+      "errorNoMediaSupport": "お使いのブラウザは音声録音をサポートしていません。", "errorNoTranscript": "あなたの発言を文字起こしできませんでした。",
+      "errorNoAiReply": "AIは応答しませんでした。", "errorApiFailed": "音声の送信または応答の受信に失敗しました",
+      "clearAllTooltip": "セッションをクリア"
     }
+  },
+  "notFoundPage": {
+    "title": "ページが見つかりません",
+    "message": "申し訳ありませんが、お探しのページは存在しないか、移動された可能性があります。",
+    "backToHome": "ホームページに戻る"
   },
   "languages": {
     "id": "インドネシア語",

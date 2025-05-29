@@ -4,47 +4,18 @@
   "footerText": "© {year} Edication Lab. Learning Experiment.",
   "dashboard": {
     "title": "Feature Dashboard",
+    "exploreButton": "Explore",
     "features": {
-      "personaChat": {
-        "name": "PersonaChat",
-        "description": "Chat with AI personas."
-      },
-      "whisperTranscriber": {
-        "name": "Audio Transcriber",
-        "description": "Convert audio to text."
-      },
-      "soalGenerator": {
-        "name": "Quiz Generator",
-        "description": "Create quizzes automatically."
-      },
-      "grammarChecker": {
-        "name": "Grammar Checker",
-        "description": "Check English & Japanese grammar."
-      },
-      "aiArticleReader": {
-        "name": "AI Article Reader",
-        "description": "AI helps summarize and explain articles."
-      },
-      "aiFlashcardMaker": {
-        "name": "AI Flashcard Maker",
-        "description": "Create flashcards automatically from text."
-      },
-      "mentorPython": {
-        "name": "Python Mentor",
-        "description": "Python code explanations, debugging."
-      },
-      "kamusJepang": {
-        "name": "Smart Japanese Dictionary",
-        "description": "Word meanings & example sentences."
-      },
-      "speakingPractice": {
-        "name": "Speaking Practice",
-        "description": "AI listens and responds."
-      },
-      "aiInterviewSimulator": {
-        "name": "AI Interview Simulator",
-        "description": "Simulate job interviews."
-      }
+      "personaChat": { "name": "PersonaChat", "description": "Chat with AI personas." },
+      "whisperTranscriber": { "name": "Audio Transcriber", "description": "Convert audio to text." },
+      "soalGenerator": { "name": "Quiz Generator", "description": "Create quizzes automatically." },
+      "grammarChecker": { "name": "Grammar Checker", "description": "Check English & Japanese grammar." },
+      "aiArticleReader": { "name": "AI Article Reader", "description": "AI helps summarize and explain articles." },
+      "aiFlashcardMaker": { "name": "AI Flashcard Maker", "description": "Create flashcards automatically from text." },
+      "mentorPython": { "name": "Python Mentor", "description": "Python code explanations, debugging." },
+      "kamusJepang": { "name": "Smart Japanese Dictionary", "description": "Word meanings & example sentences." },
+      "speakingPractice": { "name": "Speaking Practice", "description": "AI listens and responds." },
+      "aiInterviewSimulator": { "name": "AI Interview Simulator", "description": "Simulate job interviews." }
     }
   },
   "featuresPage": {
@@ -56,104 +27,86 @@
     "apiErrorNoData": "No data received from the server.",
     "apiError": "Server error",
     "personaChat": {
-      "typeMessagePlaceholder": "Type a message for {personaName}...",
-      "sendButtonLabel": "Send Message"
+      "typeMessagePlaceholder": "Type a message for {personaName}...", "sendButtonLabel": "Send Message",
+      "personas": { "guruJepang": "Japanese Teacher", "mentorPython": "Python Mentor", "jlptN5": "JLPT N5 Simulator", "toeflTrainer": "TOEFL Trainer" },
+      "welcomeMessage": "Hello! I'm {personaName}. How can I help you?",
+      "defaultAiName": "AI", "clearChatTooltip": "Clear Chat", "aiTyping": "AI is typing..."
     },
     "whisperTranscriber": {
-      "uploadLabel": "Upload Your Audio File",
-      "selectFileButton": "Select a file",
-      "dragAndDrop": "or drag and drop",
-      "noFileChosen": "No file chosen yet",
-      "selectedFileName": "Selected file",
-      "transcribeButton": "Transcribe Audio",
-      "transcribingButton": "Transcribing...",
-      "transcriptionResultTitle": "Transcription Result:",
-      "errorNoFileSelected": "Please select an audio file first.",
-      "errorInvalidFileType": "Invalid file type. Only MP3 or WAV are allowed.",
-      "errorFileSizeTooLarge": "File size is too large. Maximum {maxSize}MB.",
-      "errorTranscriptionFailed": "Failed to transcribe audio",
-      "textCopied": "Text copied to clipboard!",
-      "copyFailed": "Failed to copy text.",
-      "copyButtonTooltip": "Copy Transcription"
+      "uploadLabel": "Upload Your Audio File", "selectFileButton": "Select a file", "dragAndDrop": "or drag and drop",
+      "noFileChosen": "No file chosen yet", "selectedFileName": "Selected file", "transcribeButton": "Transcribe Audio",
+      "transcribingButton": "Transcribing...", "transcriptionResultTitle": "Transcription Result:",
+      "errorNoFileSelected": "Please select an audio file first.", "errorInvalidFileType": "Invalid file type. Only MP3 or WAV are allowed.",
+      "errorFileSizeTooLarge": "File size is too large. Maximum {maxSize}MB.", "errorTranscriptionFailed": "Failed to transcribe audio",
+      "textCopied": "Text copied to clipboard!", "copyFailed": "Failed to copy text.", "copyButtonTooltip": "Copy Transcription"
     },
     "soalGenerator": {
-      "materialInputLabel": "Enter Your Subject Material Text:",
-      "materialInputHint": "The more detailed and longer the material, the better the quality of the generated questions.",
-      "materialInputPlaceholder": "Copy and paste your subject material here...",
-      "numberOfQuestionsLabel": "Number of Questions:",
-      "questionTypeLabel": "Question Type:",
-      "questionTypeMultipleChoice": "Multiple Choice",
-      "generateButton": "Generate Questions",
-      "generatingButton": "Generating...",
-      "generatedQuestionsTitle": "Generated Questions:",
-      "answerKeyLabel": "Answer Key",
-      "explanationLabel": "Explanation",
-      "errorNoMaterial": "Please enter the subject material first.",
+      "materialInputLabel": "Enter Your Subject Material Text:", "materialInputHint": "The more detailed and longer the material, the better the quality of the generated questions.",
+      "materialInputPlaceholder": "Copy and paste your subject material here...", "numberOfQuestionsLabel": "Number of Questions:",
+      "questionTypeLabel": "Question Type:", "questionTypeMultipleChoice": "Multiple Choice", "generateButton": "Generate Questions",
+      "generatingButton": "Generating...", "generatedQuestionsTitle": "Generated Questions:", "answerKeyLabel": "Answer Key",
+      "explanationLabel": "Explanation", "errorNoMaterial": "Please enter the subject material first.",
       "errorMaterialTooShort": "Material is too short. Please enter at least 50 characters.",
-      "errorNoSoalGenerated": "No questions could be generated from this material.",
-      "errorGenerationFailed": "Failed to generate questions",
+      "errorNoSoalGenerated": "No questions could be generated from this material.", "errorGenerationFailed": "Failed to generate questions",
       "noQuestionsYet": "Generated questions will appear here after you input material and press 'Generate Questions'."
     },
-    "kamusJepang": {
-      "searchInputPlaceholder": "Enter a Japanese word (Kanji, Hiragana, Katakana, or Romaji)...",
-      "searchButtonLabel": "Search",
-      "loadingMessage": "Searching...",
-      "initialMessage": "Enter a word to start searching the dictionary.",
-      "errorNoWord": "Please enter a word to search.",
-      "errorNotFound": "The word '{word}' was not found in the dictionary.",
-      "errorSearchFailed": "Failed to perform search",
-      "noDefinitionsFound": "No definitions found for this entry."
+    "grammarChecker": {
+      "textInputLabel": "Enter Text to Check:", "textInputPlaceholder": "Type or paste your text here...",
+      "languageSelectLabel": "Select Text Language:", "langEnglish": "English", "langJapanese": "Japanese",
+      "checkButton": "Check Grammar", "checkingButton": "Checking...", "resultTitle": "Check Result:",
+      "suggestionTooltip": "Suggestion", "errorNoText": "Please enter text first.", "errorCheckFailed": "Failed to check grammar",
+      "noErrorsFound": "No grammar errors detected.", "initialMessage": "Enter text and select a language to start grammar checking.",
+      "clearAllTooltip": "Clear Input & Results"
+    },
+    "aiArticleReader": {
+      "urlInputLabel": "Enter Article URL:", "urlInputPlaceholder": "https://example.com/interesting-article",
+      "processButton": "Process Article", "processingButton": "Processing...",
+      "loadingMessage": "Fetching and analyzing article...", "initialMessage": "Enter an article URL to have AI read and summarize it.",
+      "errorNoUrl": "Please enter an article URL first.", "errorInvalidUrl": "Invalid URL format. Ensure it starts with http:// or https://",
+      "errorProcessingFailed": "Failed to process article", "titleNotAvailable": "Title not available",
+      "summaryNotAvailable": "Summary not available.", "clearAllTooltip": "Clear URL & Results"
     },
     "aiFlashcardMaker": {
-      "materialInputLabel": "Enter Material Text for Flashcards:",
-      "materialInputHint": "The AI will try to create question/answer or concept/definition pairs from this text.",
-      "materialInputPlaceholder": "Copy and paste your material here...",
-      "createButton": "Create Flashcards",
-      "creatingButton": "Creating...",
-      "cardCounter": "Card {current} of {total}",
-      "prevButton": "Previous",
-      "nextButton": "Next",
-      "errorNoMaterial": "Please enter the material first.",
+      "materialInputLabel": "Enter Material Text for Flashcards:", "materialInputHint": "The AI will try to create question/answer or concept/definition pairs from this text.",
+      "materialInputPlaceholder": "Copy and paste your material here...", "createButton": "Create Flashcards",
+      "creatingButton": "Creating...", "cardCounter": "Card {current} of {total}", "prevButton": "Previous",
+      "nextButton": "Next", "errorNoMaterial": "Please enter the material first.",
       "errorMaterialTooShort": "Material is too short. Please enter at least 30 characters.",
-      "errorNoFlashcardsGenerated": "No flashcards could be generated from this material.",
-      "errorCreationFailed": "Failed to create flashcards",
+      "errorNoFlashcardsGenerated": "No flashcards could be generated from this material.", "errorCreationFailed": "Failed to create flashcards",
       "clearAllTooltip": "Clear All & Start Over"
     },
-    "aiArticleReader":{
-        "urlInputLabel": "Masukan URL Artikel:",
-        "urlInputPlaceholder": "https://contoh.com/artikel-menarik",
-        "processButton": "Memproses...",
-        "loadingMessage": "Sedang Mengambil dan menganalisis artikel...",
-        "initialMessage": "Masuka URL artikel untuk dibaca dan diringkas oleh AI.",
-        "errorNoUrl": "Silahkan masukan URL artikel terlebih dahulu.",
-        "errorInvalidUrl": "Format URL tidak valid. Pastikan mennggunakan http:// atau https://",
-        "errorProcessingFailed": "Gagal memproses artikel",
-        "titleNotAvailable": "Ringkasan tidak tersedia.",
-        "clearAllTooltip": "Bersihkan URL dan hasil"
-    },
-    "grammarChecker":{
-        "textInputLabel": "Masukan Teks untuk Diperiksa: ",
-        "textInputPlaceholder": "Ketik atau tempel teks di sini...",
-        "languageSelectLabel": "Pilih Bahasa Teks: ",
-        "langEnglish": "Inggris",
-        "langJapanese": "Jepang",
-        "checkButton": "Periksa Tata Bahasa",
-        "checkingButton": "Memeriksa...",
-        "resultTitle": "Hasil Pengecekan: ",
-        "suggestionTooltip": "Saran",
-        "errorNoText": "Silahkan masukan teks terlebih dahulu.",
-        "errorCheckFailed": "Gagal memeriksa tata bahasa",
-        "noErrorsFound": "Tidak ada kesalah tata bahasa yang terdeteksi.",
-        "initialMessage": "Masukan teks dan pilih bahasa untuk memulai.",
-        "clearAllTooltip": "Bersihkan Input dan Hasil."
-    },
     "mentorPython": {
-        "welcomeMessage": "Halo! Saya Mentor Python pribadimu. Tanyakan apa saja tentang Python!",
-        "typeMessagePlaceholder": "Ketik pertanyaan Python Anda...",
-        "sendButtonLabel": "Kirim",
-        "clearChatTooltip": "Bersihkan Obrolan",
-        "aiTyping": "Mentor sedang berpikir..."
+      "welcomeMessage": "Hello! I'm your personal Python Mentor. Ask me anything about Python!", "typeMessagePlaceholder": "Type your Python question...",
+      "sendButtonLabel": "Send", "clearChatTooltip": "Clear Chat", "aiTyping": "Mentor is thinking..."
+    },
+    "kamusJepang": {
+      "searchInputPlaceholder": "Enter a Japanese word (Kanji, Hiragana, Katakana, or Romaji)...", "searchButtonLabel": "Search",
+      "loadingMessage": "Searching...", "initialMessage": "Enter a word to start searching the dictionary.",
+      "errorNoWord": "Please enter a word to search.", "errorNotFound": "The word '{word}' was not found in the dictionary.",
+      "errorSearchFailed": "Failed to perform search", "noDefinitionsFound": "No definitions found for this entry."
+    },
+    "aiInterviewSimulator": {
+      "types": { "sswJapan": "SSW Japan", "itDeveloper": "IT Developer", "generalBehavioral": "General Behavioral" },
+      "welcomeMessage": "Welcome to the interview simulation for {interviewType}. I'll be your interviewer. Let's begin.",
+      "defaultInterviewerName": "AI Interviewer", "typeAnswerPlaceholder": "Type your answer here...",
+      "interviewEndedPlaceholder": "The interview has ended. Select another type or restart.", "sendButtonLabel": "Send Answer",
+      "restartTooltip": "Restart Interview", "aiTyping": "Interviewer is preparing a question...",
+      "interviewEndedMessage": "Thank you, this interview session has ended. You can start a new session by selecting an interview type or pressing the restart button."
+    },
+    "speakingPractice": {
+      "startRecordingButton": "Start Recording", "stopRecordingButton": "Stop Recording", "recordingInProgress": "Recording in progress...",
+      "initialMessage": "Press the button to start practicing your speaking.", "processingAudio": "Processing your audio...",
+      "yourSpeechTitle": "Your Speech:", "aiResponseTitle": "AI Response:",
+      "errorMicAccess": "Could not access microphone. Please ensure you've granted permission. Error: {error}",
+      "errorNoMediaSupport": "Your browser does not support audio recording.", "errorNoTranscript": "Could not transcribe your speech.",
+      "errorNoAiReply": "AI did not provide a response.", "errorApiFailed": "Failed to send audio or receive a response",
+      "clearAllTooltip": "Clear Session"
     }
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "message": "Sorry, the page you are looking for does not exist or has been moved.",
+    "backToHome": "Back to Homepage"
   },
   "languages": {
     "id": "Indonesian",

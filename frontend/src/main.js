@@ -17,9 +17,12 @@ const getInitialLocale = () => {
     if (savedLocale && ['id', 'en', 'ja'].includes(savedLocale)){
         return savedLocale;
     }
-    const browserLang = navigator.language.split('-')[0];
-    return ['id', 'en', 'ja'].includes(browserLang) ? browserLang: 'id';
-}
+    const browserLang = navigator.language?.split('-')[0];
+    if(browserLang && ['id', 'en', 'ja'].includes(browserLang)){
+        return browserLang;
+    }
+    return 'id';
+};
 
 //setup i18n
 const i18n = createI18n({
@@ -32,13 +35,14 @@ const i18n = createI18n({
         ja: jaMessages
     },
     globalInjection: true,
-    warnHtmlMessage: false
-})
+    warnHtmlMessage: false,
+   
+});
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(createPinia())
-app.use(router)
-app.use(i18n)
+app.use(createPinia());
+app.use(router);
+app.use(i18n);
 
-app.mount('#app')
+app.mount('#app');

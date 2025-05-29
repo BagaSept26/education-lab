@@ -12,11 +12,6 @@ const apiClient = axios.create({
 
 //interceptor
 apiClient.interceptors.request.use(config => {
-    // console.log('Starting Request', config);
-    // const token = localStorage.getItem('user-token');
-    // if (token) {
-    //   config.headers.Authorization = `Bearer ${token}`;
-    // }
     return config;
 }, error => {
     return Promise.reject(error);
@@ -26,11 +21,6 @@ apiClient.interceptors.response.use(response => {
     // console.log('Response:', response)
     return response;
 }, error => {
-    // console.error('Response Error:', error.response || error.message);
-    // Handle error global, misal redirect ke login jika 401 Unauthorized
-    // if (error.response && error.response.status === 401) {
-    //   router.push('/login');
-    // }
     return Promise.reject(error);
 });
 
@@ -52,10 +42,33 @@ export default {
       }
     });
   },
-
-  // fungsi lain untuk setiap fitur AI
-  // 
-  // generateSoal(materi) {
-  //   return apiClient.post('/generate-soal', { materi });
-  // },
+  // --- soalGenerator ---
+  generateSoal(payload){
+    return apiClient.post('generate-soal', payload);
+  },
+  // ---Grammar Checker ---
+  checkGrammar(payload){
+    return apiClient.post('/check-grammar', payload);
+  },
+  // --- AIArtikelRreader ---
+  processArticle(payload){
+    return apiClient.post('/process-article', payload);
+  },
+  // --- AIFlashCard ---
+  createFlashcards(payload){
+    return apiClient.post('/create/flashcards', payload);
+  },
+  // --- kamus ---
+  cariKataJepang(payload){
+    return apiClient.post('/kamus-jepang', payload);
+  },
+  // --- Speaking practice ---
+  submitSpeakingPractice(formData){
+    return apiClient.post('/speaking-practice', formData, {
+      headers:{
+        'Content-Type': 'multipart/form-data'
+      }
+    });
+  },
+  ///fungsi lain
 };

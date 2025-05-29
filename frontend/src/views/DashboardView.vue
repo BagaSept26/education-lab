@@ -7,10 +7,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const { t,locale } = useI18n();
-const router = useRouter();
-const dashboardHeader = ref(null);
-const featureCardsRefs = ref([]);
+const { t, locale } = useI18n()
+const router = useRouter()
+const dashboardHeader = ref(null)
+const featureCardsRefs = ref([])
 
 const featuresConfig = [
   { id: 'personaChat', icon: '🤖', routeName: 'FeaturePersonaChat', color:'text-sky-400', hoverColor: 'hover:shadow-sky-500/40'},
@@ -32,40 +32,29 @@ function navigateToFeature(routeName) {
   }
 }
 
-//Animasi Header
+
 onMounted(() => {
-  console.log("current locale in DashboardView:", locale.value);
+  console.log("Dashboard Mounted. Current locale:", locale.value);
   console.log("test appName translation:", t('appName'));
-  console.log("Test personaChat name translation:", t('dashboard.features.personaChat.name'))
+  console.log("Testing t('dashboard.features.personaChat.name'):", t('dashboard.features.personaChat.name'));
+
+  //animasi header  
   if(dashboardHeader.value){
-    gsap.from(dashboardHeader.value.querySelectorAll('h1, p'), {
-      opacity: 0,
-      y: 60,
-      duration: 0.8,
-      stagger: 0.25,
-      ease: 'expo.out',
-      delay: 0.2
-    })
+    const headerElements = dashboardHeader.value.querySelectorAll('h1,p');
+    gsap.set(headerElements,{opacity: 0, y:75});
+    const headerTl = gsap.timeline({delay: 0.3});
+    headerTl.to(headerElements[0], {opacity:1, y:0, duration: 1.2, ease: 'power3.out'}, "-=0.8");
   }
-  //animasi untuk card
-  featureCardsRefs.value.forEach((card, index) => {
-    if (card) {
-      gsap.from(card, {
-        opacity: 0,
-        y:70,
-        scale: 0.95,
-        duration: 0.5,
-        ease: 'circ.out',
-        scrollTrigger: {
-          trigger: card,
-          start: 'top 85%',
-          end: 'bottom 70%',
-          toggleActions: 'play none none none',
-        },
-        delay: (index * 0.05) + 0.5
-      })
+  //animasi kartu
+  featureCardsRefs.value.forEach((cardEl, index)=>{
+    if(cardEl){
+      gsap.from(cardEl, {
+        opacity: 0, y: 80, scale:0.9, duration: 0.7, ease: 'back.out(1.4)',
+        scrollTrigger: {trigger: cardEl, start: 'top 90%', toggleActions: 'play none none none'},
+        delay: (index * 0.08) +0.7
+      });
     }
-  })
+  });
 })
 </script>
 
@@ -102,27 +91,29 @@ onMounted(() => {
       </div>
     </div>
 
-    <footer class="mt-20 text-center text-neutral-500 text-sm">
-      <!--HTML dalam terjemahan-->
-      <p v-html="t('footerText', { year: new Date().getFullYear()})"></p>
+    <footer class="mt-20 mb-10 text-center text-neutral-500 text-sm">
+      <p v-html="t('footerText', { year: new Date().getFullYear() })"></p>
     </footer>
   </div>
 </template>
 
 <style scoped>
-.dashboard-container{
-  background: radial-gradient(circle, rgba(30,41,59,1) 0%, rgba(17,24,39,1) 100%);
-  background-image: radial-gradient(circle at top left, theme('colors.sky.900/30'), transparent 40%), radial-gradient(circle at bottom right, theme('colors.blue.900/30'), transparent 40%);
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+.dashboard-container {
+  background: linear-gradient( 120deg, theme('colors.neutral.900') 0%, theme('colors.sky.950') 25%,
+    theme('colors.blue.950') 50%, theme('colors.indigo.950') 75%, theme('colors.neutral.900') 100% );
+  background-size: 300% 300%;
+  animation: animatedGradient 25s ease infinite;
+}
+
 .feature-card {
-  background: rgba(41,56,78,0.7);
-  backdrop-filter: blur(10px);
-  border: 1px solid theme('colors.neutral.700/50');
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.08);
+  /* Bayangan akan di-handle oleh shadowColor dan efek hover */
 }
-.feature-card:hover{
-  border-color: theme('colors.sky.500/70');
-}
-.feature-card{
-  opacity: 0;
-}
+
 </style>
