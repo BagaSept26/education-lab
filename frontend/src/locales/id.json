@@ -127,6 +127,18 @@
       "errorNoFlashcardsGenerated": "Tidak ada flashcard yang berhasil dibuat dari materi ini.",
       "errorCreationFailed": "Gagal membuat flashcard",
       "clearAllTooltip": "Bersihkan Semua & Mulai Lagi"
+    },
+    "aiArticleReader":{
+        "urlInputLabel": "Masukan URL Artikel:",
+        "urlInputPlaceholder": "https://contoh.com/artikel-menarik",
+        "processButton": "Memproses...",
+        "loadingMessage": "Sedang Mengambil dan menganalisis artikel...",
+        "initialMessage": "Masuka URL artikel untuk dibaca dan diringkas oleh AI.",
+        "errorNoUrl": "Silahkan masukan URL artikel terlebih dahulu.",
+        "errorInvalidUrl": "Format URL tidak valid. Pastikan mennggunakan http:// atau https://",
+        "errorProcessingFailed": "Gagal memproses artikel",
+        "titleNotAvailable": "Ringkasan tidak tersedia.",
+        "clearAllTooltip": "Bersihkan URL dan hasil"
     }
 },
 
